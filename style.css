@@ -1,0 +1,186 @@
+body, h1, h2, p, div, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.mb-4{
+    font-size: xxx-large;
+}
+.style{
+    font-size: 30px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #378b29;
+background-image: linear-gradient(315deg, #378b29 0%, #ffffff 74%);
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Company Header */
+.company-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.company-logo {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Team Section Heading */
+.team-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-section h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.team-section p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Team Cards */
+.ftco-section {
+    padding: 20px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.col-lg-3, .col-sm-6 {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+
+.block-2 {
+    perspective: 1000px;
+}
+
+.flipper {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.block-2:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.front {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    /* background: rgba(233, 0, 0, 0.6); */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.back {
+    background-color: transparent;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+blockquote {
+    font-size: 16px;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .col-lg-3, .col-sm-6 {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .col-lg-3, .col-sm-6 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Footer Styling */
+.footer {
+    color: #fff;
+    padding: 40px 0;
+}
+  
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #ccc;
+}
